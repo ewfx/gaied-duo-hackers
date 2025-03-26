@@ -1,16 +1,16 @@
 <div class="container mt-5">
   <h2 class="text-center">Manage Request & Sub-Request Types</h2>
   
-  <div class="card p-4 request-creation ">
-    <h4>Add New Request Type</h4>
-    <div class="input-group">
+  <div class="card p-4  ">
+    <h4 class="headers" >Add New Request Type</h4>
+    <div class="input-group request-creation">
       <input type="text" class="form-control" placeholder="Enter Request Type" [(ngModel)]="newRequestType">
       <button class="btn btn-primary" (click)="addRequestType()">Add</button>
     </div>
   </div>
   
   <div class="mt-4">
-    <h4>Existing Request Types</h4>
+    <h4 class="headers" >Existing Request Types</h4>
     <div class="request-list">
       <div class="request-item" *ngFor="let request of requestTypes">
         <div class="request-header">

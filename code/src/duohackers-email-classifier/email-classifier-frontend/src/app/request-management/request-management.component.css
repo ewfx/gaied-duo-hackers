@@ -14,6 +14,10 @@ h2, h4 {
   margin-bottom: 20px;
 }
 
+.headers{
+	text-align : left;
+}
+
 .input-group {
   display: flex;
   gap: 10px;
