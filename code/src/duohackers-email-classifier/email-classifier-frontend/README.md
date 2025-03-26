@@ -1,7 +1,8 @@
 # 🌟 Angular Frontend for Email Classification & Request Management
 
 ## 📌 Project Overview
-This Angular 10+ application provides a **user-friendly interface** to:
+This Angular 10+ application provides a **user-friendly interface** to:  
+
 ✅ **Upload emails & attachments** for AI-based classification  
 ✅ **View extracted fields dynamically based on request type**  
 ✅ **Detect & display duplicate emails in the UI**  
