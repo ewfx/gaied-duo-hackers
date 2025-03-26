@@ -182,4 +182,4 @@ ng serve --open
 
 ## 👥 Team : DuoHackers
 - **Sunkara Swathi Venkata Ratnam(u810271)**
-- **Aduri Shiva Kiran** 
+- **Adduri Shiva Kiran (u781829)** 
