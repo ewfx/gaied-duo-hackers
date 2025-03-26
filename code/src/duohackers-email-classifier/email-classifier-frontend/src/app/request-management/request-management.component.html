@@ -1,0 +1,30 @@
+<div class="container mt-5">
+  <h2 class="text-center">Manage Request & Sub-Request Types</h2>
+  
+  <div class="card p-4 request-creation ">
+    <h4>Add New Request Type</h4>
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="Enter Request Type" [(ngModel)]="newRequestType">
+      <button class="btn btn-primary" (click)="addRequestType()">Add</button>
+    </div>
+  </div>
+  
+  <div class="mt-4">
+    <h4>Existing Request Types</h4>
+    <div class="request-list">
+      <div class="request-item" *ngFor="let request of requestTypes">
+        <div class="request-header">
+          <h4>{{ request.name }}</h4>
+          <button class="btn btn-danger" (click)="deleteRequestType(request.name)">Delete</button>
+        </div>
+        <div class="sub-request-list">
+          <span *ngFor="let sub of request.subRequests" class="sub-request">{{ sub }}</span>
+        </div>
+        <div class="input-group mt-2">
+          <input type="text" class="form-control" placeholder="Add Sub-Request" [(ngModel)]="newSubRequest[request.name]">
+          <button class="btn btn-secondary" (click)="addSubRequest(request.name)">Add</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,40 @@
+<div class="container mt-5">	  
+	 
+      <h2 class="text-center">Email Classifier</h2>
+      <div class="card p-4">
+        <label for="file-upload" class="form-label">Upload Email File (EML, PDF, DOCX)</label>
+        <input type="file" class="form-control" id="file-upload" (change)="onFileSelected($event)" />
+        <button class="btn btn-primary mt-3 w-100" (click)="uploadFile()" [disabled]="!selectedFile">Upload & Classify</button>
+        <div class="progress mt-3" *ngIf="progress >= 0">
+          <div class="progress-bar" role="progressbar" [style.width.%]="progress">{{ progress }}%</div>
+        </div>
+        <p class="text-danger mt-2" *ngIf="error">{{ error }}</p>
+		<p class="text-danger mt-2" *ngIf="duplicateError">{{ duplicateError }}</p>
+      </div>
+      
+      <div class="mt-4" *ngIf="classificationResult">
+        <h3>Classification Result</h3>
+        <p><strong>Filename:</strong> {{ classificationResult.filename }}</p>
+        <p><strong>Primary Request:</strong> {{ classificationResult.classification.primary_request }}</p>
+        <ul>
+          <li *ngFor="let category of getCategories()">
+            <strong>{{ category }}:</strong>
+            <ul>
+              <li *ngFor="let sub of classificationResult.classification.classification[category]">
+                {{ sub.subcategory }} ({{ (sub.confidence * 100) | number:'1.0-2' }}%)
+              </li>
+            </ul>
+          </li>
+        </ul>
+		
+		 <div *ngIf="classificationResult.extracted_fields">
+          <h3>Extracted Fields</h3>
+          <ul>
+            <li *ngFor="let field of classificationResult.extracted_fields | keyvalue">
+              <strong>{{ field.key }}:</strong> {{ field.value }}
+            </li>
+          </ul>
+        </div>
+		
+      </div>
+    </div>
