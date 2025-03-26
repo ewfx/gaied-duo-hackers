@@ -26,10 +26,9 @@ It includes:
 
 ## 🎥 Demo
 🔗 [Live Demo](#) (if applicable)  
-📹 [Video Demo](#) (if applicable)  
-🖼️ Screenshots:
+📹 [Video Demo](#) : https://github.com/ewfx/gaied-duo-hackers/blob/main/artifacts/demo/DuoHackers_Email_Classifier.mp4  
+🖼️ Screenshots: https://github.com/ewfx/gaied-duo-hackers/blob/main/artifacts/demo/DuoHackers_Email_Classifier_Screenshots.pdf
 
-![Screenshot 1](link-to-image)
 
 ## 💡 Inspiration
 This project was inspired by real-world banking & finance challenges where:  
