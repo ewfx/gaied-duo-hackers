@@ -14,7 +14,7 @@
       
       <div class="mt-4" *ngIf="classificationResult">
         <h3>Classification Result</h3>
-        <p><strong>Filename:</strong> {{ classificationResult.filename }}</p>
+        <p><strong>File Name:</strong> {{ classificationResult.filename }}</p>
         <p><strong>Primary Request:</strong> {{ classificationResult.classification.primary_request }}</p>
         <ul>
           <li *ngFor="let category of getCategories()">
@@ -28,7 +28,7 @@
         </ul>
 		
 		 <div *ngIf="classificationResult.extracted_fields">
-          <h3>Extracted Fields</h3>
+          <h4>Extracted Fields</h4>
           <ul>
             <li *ngFor="let field of classificationResult.extracted_fields | keyvalue">
               <strong>{{ field.key }}:</strong> {{ field.value }}
