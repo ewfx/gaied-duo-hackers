@@ -2,10 +2,11 @@
 
 ## 📌 Project Overview
 This project leverages **AI & NLP** to automate **email classification and request management**. 
+
 It includes:
 
 ✅ **Classification of emails & attachments into predefined request/sub-request types**  
-✅ **Handling multi request email with primary intent detection** 
+✅ **Handling multi request email with primary intent detection**  
 ✅ **Dynamic field extraction based on Request type (e.g. Loan Amount, Account Number etc)**  
 ✅ **Duplicate email detection using AI-driven semantic similarity**  
 ✅ **Request type management for dynamic workflows**  
