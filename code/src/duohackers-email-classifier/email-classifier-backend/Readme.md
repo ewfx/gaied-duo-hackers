@@ -2,7 +2,9 @@
 
 ## 📌 Project Overview
 Email Classifier - Backend project automates **email classification & field extraction**. 
+
 It supports:
+
 ✅ **Classification of emails & attachments** into predefined **request/sub-request types**  
 ✅ **Dynamic field extraction** based on email context (e.g., Loan Amount, Account Number)  
 ✅ **Duplicate email detection** using AI-driven semantic similarity  
@@ -31,9 +33,6 @@ pip install -r requirements.txt
 ```sh
 uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
 ```
-
-### 4️⃣ Open API Docs (Swagger UI)
-Visit **[http://localhost:8000/docs](http://localhost:8000/docs)**
 
 ## 📥 API Endpoints
 ### 🔹 Upload & Classify Emails
