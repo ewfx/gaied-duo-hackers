@@ -1,4 +1,4 @@
-# 🚀 AI-Powered Email Classification & Request Management
+# 🚀 Duohackers-email-classifier
 
 ## 📌 Project Overview
 This project leverages **AI & NLP** to automate **email classification and request management**. 
